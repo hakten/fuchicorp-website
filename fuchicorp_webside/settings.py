@@ -59,7 +59,7 @@ ROOT_URLCONF = 'fuchicorp_webside.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
