@@ -3,3 +3,8 @@
 *.pyc*
 *.vscode*
 *.DS_Store*
+*.terraform*
+*backend.tf*
+*fuchicorp-service-account.json*
+
+*tfvars*
