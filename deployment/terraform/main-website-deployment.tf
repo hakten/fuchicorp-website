@@ -20,7 +20,7 @@ resource "kubernetes_deployment" "main_website_deployment" {
         image_pull_secrets = [ { name = "nexus-creds" } ]
 
         container {
-          image             = "${var.main-website_image}"
+          image             = "${var.deployment_image}"
           name              = "main-website-container"
           image_pull_policy = "Always"
         }
