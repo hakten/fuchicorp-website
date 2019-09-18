@@ -12,7 +12,7 @@ variable "dns_endpoint_main-website" {
   }
 }
 
-variable "main-website_image" {
+variable "deployment_image" {
   default = "docker.fuchicorp.com/main-website-dev:0.5"
 }
 
