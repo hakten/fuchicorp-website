@@ -13,7 +13,7 @@ variable "dns_endpoint_main-website" {
 }
 
 variable "main-website_image" {
-  default = "docker.fuchicorp.com/main-website-dev:0.3"
+  default = "docker.fuchicorp.com/main-website-dev:0.5"
 }
 
 variable "lets_encrypt_email" {
