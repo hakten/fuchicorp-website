@@ -22,14 +22,14 @@ ingress:
   annotations: 
      kubernetes.io/ingress.class: nginx
      kubernetes.io/tls-acme: "true"
-     certmanager.k8s.io/cluster-issuer: letsencrypt-staging
+     certmanager.k8s.io/cluster-issuer: letsencrypt-prod
   path: /
   hosts:
-    - test-fuchicorp-website.fuchicorp.com
+    - test-website.fuchicorp.com
   tls: 
     - secretName: Fuchicorp-website-tls
       hosts:
-        - test-fuchicorp-website.fuchicorp.com
+        - test-website.fuchicorp.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
