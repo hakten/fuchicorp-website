@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ include "fuchicorp-website.fullname" . }}
+  name: {{ include "test.fullname" . }}
   labels:
     app.kubernetes.io/name: {{ include "fuchicorp-website.name" . }}
     helm.sh/chart: {{ include "fuchicorp-website.chart" . }}
