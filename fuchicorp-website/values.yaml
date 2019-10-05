@@ -22,12 +22,12 @@ ingress:
   annotations: 
      kubernetes.io/ingress.class: nginx
      kubernetes.io/tls-acme: "true"
-     certmanager.k8s.io/cluster-issuer: letsencrypt-fuchicorp-prod
+     certmanager.k8s.io/cluster-issuer: letsencrypt-fuchicorp-dev
   path: /
   hosts:
     - test-website.fuchicorp.com
   tls: 
-    - secretName: fuchicorp-website-tls
+    - secretName: test-website-tls
       hosts:
         - test-website.fuchicorp.com
 
