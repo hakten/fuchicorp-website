@@ -27,7 +27,7 @@ ingress:
   hosts:
     - test-website.fuchicorp.com
   tls: 
-    - secretName: Fuchicorp-website-tls
+    - secretName: fuchicorp-website-tls
       hosts:
         - test-website.fuchicorp.com
 
