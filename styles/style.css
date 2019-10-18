@@ -1,0 +1,88 @@
+*{
+
+}
+body{
+	min-height: 100vh;
+	height: auto;
+	position: relative;
+	margin: 0;
+	width: 100%;
+/* 	background: linear-gradient(300deg, #3f87a6, #ebf8e1, #f69d3c, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+ animation: bAnimation;
+ background-size: 800% 800%;
+ -webkit-animation: bAnimation 100s ease infinite;
+ -moz-animation: bAnimation 100s ease infinite;
+ animation: bAnimation 100s ease infinite; */ 
+	scrollbar-width: none!important;
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+	overflow: hidden;
+}
+body::-webkit-scrollbar {
+width: 0 !important
+
+}
+#myVideo{
+	left: 50%;
+	top: 50%;
+  	min-width: 100%;
+  	min-height: 100%;
+  	position: absolute;
+  	height: auto;
+  	transform: translateX(-50%) translateY(-50%);
+}
+
+.currentSection{
+	height: 100vh!important;
+	width: 100vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.section{
+	height: 100vh!important;
+	width: 100vw!important;
+	position: relative;
+}
+.second{
+	background-image: url("chi.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+.third{
+	background-image: url("chitown.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+@media only screen and (max-width: 800px)and portrait {
+
+}
+@media only screen and (max-width: 600px) and portrait{
+	
+}
+
+@media only screen and (max-width: 450px) and portrait{
+	
+}
+
+@-webkit-keyframes bAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
