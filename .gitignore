@@ -8,4 +8,7 @@
 *fuchicorp-service-account.json*
 
 *tfvars*
-*set-env
+*set-env*
+html
+*node_modules*
+*scripts*
