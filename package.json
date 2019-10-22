@@ -1,0 +1,29 @@
+{
+  "name": "fuchicorp",
+  "version": "1.0.0",
+  "description": "fuchicorp website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuchicorp/fuchicorp-website.git"
+  },
+  "keywords": [
+    "fuchicorp",
+    "website"
+  ],
+  "author": "github.com/nurmukhamedbailovGit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuchicorp/fuchicorp-website/issues"
+  },
+  "homepage": "https://github.com/fuchicorp/fuchicorp-website#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^4.0.0"
+  }
+}
