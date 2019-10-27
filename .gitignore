@@ -14,3 +14,4 @@ html
 *gulpfile.js*
 *package.json*
 *package-lock.json*
+/styles*
