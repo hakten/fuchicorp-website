@@ -8,11 +8,6 @@ metadata:
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
-{{- if .Values.imageSecret.enabled }}
-      imagePullSecrets:
-{{ toYaml .Values.imageSecret.allSecrets | indent 12 }}
-{{- end }}
-
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
@@ -24,6 +19,10 @@ spec:
         app.kubernetes.io/name: {{ include "website.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
+{{- if .Values.imageSecret.enabled }}
+      imagePullSecrets:
+{{ toYaml .Values.imageSecret.allSecrets | indent 12 }}
+{{- end }}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}"
