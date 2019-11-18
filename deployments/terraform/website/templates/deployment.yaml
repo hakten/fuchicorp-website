@@ -24,22 +24,22 @@ spec:
 {{ toYaml .Values.imageSecret.allSecrets | indent 12 }}
 {{- end }}
       containers:
-        - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
-          ports:
-            - name: http
-              containerPort: 80
-              protocol: TCP
-          # livenessProbe:
-          #   httpGet:
-          #     path: /
-          #     port: http
-          # readinessProbe:
-          #   httpGet:
-          #     path: /
-          #     port: http
-          resources:
+      - name: {{ .Chart.Name }}
+        image: "{{ .Values.image.repository }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+        # livenessProbe:
+        #   httpGet:
+        #     path: /
+        #     port: http
+        # readinessProbe:
+        #   httpGet:
+        #     path: /
+        #     port: http
+        resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
       nodeSelector:
