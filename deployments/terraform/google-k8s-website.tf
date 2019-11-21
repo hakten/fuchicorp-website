@@ -17,7 +17,7 @@ resource "helm_release" "helm_website_fuchicorp" {
     "${data.template_file.website_values.rendered}",
   ]
 
-  name      = "website-fuchicorp"
+  name      = "website-fuchicorp-${var.deployment_environment}"
   namespace = "${var.deployment_environment}"
   chart     = "./website"
 }
