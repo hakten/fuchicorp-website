@@ -13,19 +13,11 @@ resource "local_file" "website_helm_chart_values" {
 }
 
 resource "helm_release" "helm_website_fuchicorp" {
-  depends_on = [
-    "helm_release.ingress_controller",
-    "kubernetes_deployment.vault_fuchicorp_deployment",
-    "kubernetes_deployment.nexus_fuchicorp_deployment",
-    "kubernetes_service.vault_fuchicorp_service",
-    "kubernetes_service.nexus_fuchicorp_service",
-  ]
-
   values = [
     "${data.template_file.website_values.rendered}",
   ]
 
-  name      = "website-fuchicorp"
+  name      = "website-fuchicorp-${var.deployment_environment}"
   namespace = "${var.deployment_environment}"
-  chart     = "./helm-website/website"
+  chart     = "./website"
 }

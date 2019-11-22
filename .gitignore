@@ -6,5 +6,5 @@
 *.terraform*
 *backend.tf*
 *fuchicorp-service-account.json*
-
+*.cache*
 *tfvars*
